@@ -6,7 +6,7 @@ const progressBar = document.getElementById("progress-bar");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
-// 📝 Preguntas (máx 8)
+// Preguntas (máx 8)
 const questions = [
     "#1 ¿Quién eres y a qué te dedicas?",
     "#2 ¿Cuáles son tus principales fortalezas?",
@@ -153,7 +153,7 @@ function downloadVideo() {
     a.click();
 }
 
-// ⏱️ Timer + progreso
+//  Timer + progreso
 function startTimer() {
     interval = setInterval(() => {
         timeLeft--;
@@ -179,7 +179,7 @@ function startTimer() {
 }
 let questionHistory = [];   // historial de índices
 let historyIndex = 0;     // posición actual en el historial
-// ❓ Mostrar pregunta
+//  Mostrar pregunta
 function updateQuestion() {
     questionText.textContent = questions[questionHistory[historyIndex]];
 }
@@ -203,7 +203,7 @@ function updateQuestion() {
 
 
 
-// ▶️ START
+//  START
 startBtn.addEventListener("click", async () => {
     startBtn.disabled = true;
 
