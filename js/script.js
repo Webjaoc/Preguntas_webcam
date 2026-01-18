@@ -124,7 +124,7 @@ const questions = [
 let currentQuestion = 0;
 let mediaRecorder;
 let recordedChunks = [];
-let totalTime = 10; // 8 minutos en segundos
+let totalTime = 480; // 8 minutos en segundos
 let timeLeft = totalTime;
 let interval;
 
