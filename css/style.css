@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+video {
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #222;
+    margin: auto;
+}
+
+.progress-container {
+    max-width: 500px;
+    height: 10px;
+    background: #ccc;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: green;
+    border-radius: 5px;
+}
+
+#timer {
+    font-size: 2rem;
+    color: red;
+}
+
+.question-box {
+    background: white;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.question-box p{
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+}
+.controls{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(47, 181, 235);
+    width: 100PX;
+    background-color: rgb(207, 230, 240);
+}
+#startBtn {
+    width: 100px;
+    height: 100px;
+    background: green;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width:400px) {
+    video, .progress-container, .question-box, .controls{
+        max-width: 90%;
+    }
+    
+}
