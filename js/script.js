@@ -221,6 +221,7 @@ startBtn.addEventListener("click", async () => {
     await startCamera();
     mediaRecorder.start();
     startTimer();
+    startBtn.style.display = "none";
 });
 
 
