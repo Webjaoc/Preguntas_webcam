@@ -74,7 +74,7 @@ video {
 @media (max-width:400px) {
     video, .progress-container, .question-box, .controls{
         max-width: 80%;
-        width: 80%;
+        
 
     
     }
