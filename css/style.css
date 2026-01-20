@@ -72,8 +72,14 @@ video {
     cursor: pointer;
 }
 @media (max-width:400px) {
-    video{
-        width: 80dvw;
+    #video{
+        max-width: 80dvw;    
+    }
+    .progress-container{
+        max-width: 80dvw;
+    }
+    .question-box {
+        max-width: 80dvw;
     }
     
 }
