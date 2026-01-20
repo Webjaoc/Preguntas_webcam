@@ -73,13 +73,14 @@ video {
 }
 @media (max-width:400px) {
     #video{
-        max-width: 80dvw;    
+        max-width: 80dvw; 
+        max-height: 50dvh;   
     }
     .progress-container{
-        max-width: 80dvw;
+        max-width: 80%;
     }
     .question-box {
-        max-width: 80dvw;
+        max-width: 80%;
     }
     
 }
