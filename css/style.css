@@ -84,7 +84,7 @@ video {
         max-width: 80%;
     }
     h1{
-        display: none;
+        visibility: hidden;
     }
     
 }
