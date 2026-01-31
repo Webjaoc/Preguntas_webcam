@@ -6,7 +6,10 @@ body {
     margin: auto;
     height: 100dvh
 }
-
+.titel {
+        max-width: 80%;
+        margin: auto;    
+    }
 video {
     max-width: 500px;
     border-radius: 10px;
@@ -33,7 +36,11 @@ video {
     font-size: 2rem;
     color: red;
 }
-
+.contador{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 .question-box {
     background: white;
     margin: 15px auto;
@@ -72,16 +79,11 @@ video {
     cursor: pointer;
 }
 @media (max-width:400px) {
-    .video_content{
-        max-width: 80%;
-        max-height: 40%;
-        margin: auto;
-        border: 1px solid black;
-    }
+    
     #video{
-        max-width: 80%; 
-        max-height: 50%;
-        margin-top: 3px;   
+        width: 200px; 
+        height: 200px;
+        margin-top: 3px;  
     }
     .progress-container{
         max-width: 80%;
@@ -89,8 +91,8 @@ video {
     .question-box {
         max-width: 80%;
     }
-    h1{
-        visibility: hidden;
+    .titel{
+        display: none;
     }
     
 }

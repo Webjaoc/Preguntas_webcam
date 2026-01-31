@@ -128,6 +128,30 @@ let totalTime = 480; // 8 minutos en segundos
 let timeLeft = totalTime;
 let interval;
 
+nextBtn.addEventListener("click", () =>{
+    contador_increment();
+       
+});
+function contador_increment(){
+    let contador = document.querySelector(".contador_preguntas");
+    if (contador.innerHTML < 8){
+        contador.innerHTML++; 
+        console.log(contador);
+    } 
+}
+prevBtn.addEventListener("click", ()=>{
+    contador_decrement();
+    
+       
+});
+function contador_decrement(){
+    let contador = document.querySelector(".contador_preguntas");
+    if (contador.innerHTML > 0){
+        contador.innerHTML--; 
+        console.log(contador);
+    } 
+}
+
 // 📷 Webcam
 async function startCamera() {
     const stream = await navigator.mediaDevices.getUserMedia({
@@ -187,7 +211,8 @@ function updateQuestion() {
 
 //Función para obtener pregunta aleatoria NO repetida
 function getRandomQuestionIndex() {
-    if (questionHistory.length === questions.length) return null;
+    if (questionHistory.length === questions.length) 
+        return null;
 
     let index;
     do {
