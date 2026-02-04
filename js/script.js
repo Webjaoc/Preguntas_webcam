@@ -137,18 +137,26 @@ function contador_increment(){
     if (contador.innerHTML < 8){
         contador.innerHTML++; 
         console.log(contador);
-    } 
+    }if (contador.innerHTML == 8){
+        nextBtn.disabled = true;
+        prevBtn.disabled = false;    
+    }else{
+        nextBtn.disabled = false;    
+    }
 }
 prevBtn.addEventListener("click", ()=>{
-    contador_decrement();
-    
-       
+    contador_decrement();       
 });
+
 function contador_decrement(){
     let contador = document.querySelector(".contador_preguntas");
-    if (contador.innerHTML > 0){
+    if (contador.innerHTML > 1){
         contador.innerHTML--; 
-        console.log(contador);
+    }if (contador.innerHTML == 1){
+        prevBtn.disabled = true;
+        nextBtn.disabled = false;    
+    }else{
+        prevBtn.disabled = false;    
     } 
 }
 
@@ -231,6 +239,8 @@ function updateQuestion() {
 //  START
 startBtn.addEventListener("click", async () => {
     startBtn.disabled = true;
+    
+    
 
     const firstIndex = getRandomQuestionIndex();
 
@@ -247,6 +257,7 @@ startBtn.addEventListener("click", async () => {
     mediaRecorder.start();
     startTimer();
     startBtn.style.display = "none";
+    
 });
 
 
